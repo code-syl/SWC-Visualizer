@@ -1,0 +1,15 @@
+.tile {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 10pt;
+}
+
+.tile:hover {
+  cursor: pointer;
+}

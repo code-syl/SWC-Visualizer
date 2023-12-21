@@ -1,0 +1,12 @@
+<div class="view">
+  <div class="tile-container">
+    <div *ngFor="let tileY of Tiles; let y = index" class="row">
+      <app-tile [Coordinates]="{X: x, Y: y}" *ngFor="let tileX of Tiles[y]; let x = index"
+                (Clicked)="onTileClick($event)" [Events]="eventsSubject"></app-tile>
+    </div>
+  </div>
+
+  <div class="nav">
+    <app-number-input-box Label="Sensor Range:" Id="sensorRange" Min=1 Max=10 (Changed)="onSensorChange($event)"></app-number-input-box>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+.view {
+  display: flex;
+  flex-direction: row;
+}
+
+.tile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
+  padding: 2pt;
+  gap: 2pt;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 2pt;
+}
+
+.nav {
+  width: 15rem;
+  border: 1px solid red;
+  border-left: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  font-size: 18pt;
+}

@@ -1,0 +1,7 @@
+<div class="tile"
+     [style.background-color]="Color"
+     (mouseenter)="Color=(Color == 'black') ? '#555555' : Color"
+     (mouseleave)="Color=(Color == '#555555') ? 'black' : Color"
+     (click)="onClick()">
+  {{Coordinates.X}},{{Coordinates.Y}}
+</div>
